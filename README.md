@@ -58,53 +58,64 @@ Then add it to your target:
 ### Usage
 
 Basic TextField
+```
 @State private var name = ""
 
 CustomTextfieldPackage(
     "Name",
     text: $name
 )
-
+```
 Border / Underline Style
+```
 CustomTextfieldPackage(
     "Email",
     text: $email,
     style: .underline
 )
-
+```
 Prefix & Suffix Icons
+```
 CustomTextfieldPackage(
     "Username",
     text: $username,
     prefixIcon: "person",
     suffixIcon: "checkmark.circle"
 )
+```
 
 Password Field with Visibility Toggle
+```
 CustomTextfieldPackage(
     "Password",
     text: $password,
     isSecure: true,
     prefixIcon: "lock"
 )
+```
 
 Floating Label with Custom Placeholder
+```
 CustomTextfieldPackage(
     "Enter Name",
     text: $name,
     placeholderColor: .red,
     placeholderFont: .headline
 )
+```
 
 Character Limit & Keyboard Type
+```
 CustomTextfieldPackage(
     "Phone Number",
     text: $phone,
     characterLimit: 10,
     keyboard: .numberPad
 )
+```
 
 Dropdown Mode (Optional)
+```
 CustomTextfieldPackage(
     "Select Country",
     text: $country,
@@ -114,6 +125,7 @@ CustomTextfieldPackage(
         print("Selected:", value)
     }
 )
+```
 
 ## 👩‍💻 Author
 
